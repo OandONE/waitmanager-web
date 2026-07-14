@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "waitmanager-web"
+version = "0.1.2"
+description = "Intelligent rate limiting for Flask, FastAPI, and Django — inspired by Fast Rub's WaitManager"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Seyyed Mohamad Hosein Moosavi Raja", email = "mohamadhosein159159@gmail.com"}
+]
+keywords = ["rate-limit", "flask", "fastapi", "django", "waitmanager", "throttle"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Framework :: Flask",
+    "Framework :: FastAPI",
+    "Framework :: Django",
+    "Topic :: Internet :: WWW/HTTP :: WSGI :: Middleware",
+]
+
+[project.urls]
+Homepage = "https://github.com/OandONE/waitmanager-web"
+Repository = "https://github.com/OandONE/waitmanager-web.git"
+Issues = "https://github.com/OandONE/waitmanager-web/issues"
+
+[project.optional-dependencies]
+flask = ["flask"]
+fastapi = ["fastapi"]
+django = ["django"]
+all = ["flask", "fastapi", "django"]
